@@ -7,6 +7,13 @@ public class Student{
     private String email;
     private String courseName;
 
+    private String first2;
+    private String last2;
+    private String email_2;
+    private String courseName_2;
+
+
+
 //default constructor
 public Student(){
     this.firstName="firstDef";
@@ -14,6 +21,11 @@ public Student(){
     this.email="emailDef";
     this.courseName="courseDef";
 }
+//constructor for name of student 2
+    public Student(String firstName_2,String lastName_2){
+        this.first2 = firstName_2;
+        this.last2=lastName_2;
+    }
 
 //constructor
     public Student(String firstName,String lastName,String email,String courseName) {
@@ -38,6 +50,13 @@ public Student(){
         return courseName;
     }
 
+    public String getEmail_2(){
+        return email_2;
+    }
+    public String getCourseName_2(){
+        return courseName_2;
+    }
+
     /* Setters */
 
     public void setFirstName(String firstName)
@@ -57,6 +76,15 @@ public Student(){
         this.courseName=courseName;
     }
 
+    public void setEmail_2(String email_2)
+    {
+        this.email_2=email_2;
+    }
+    public void setCourseName_2(String courseName_2)
+    {
+        this.courseName_2=courseName_2;
+    }
+
 
 //method to display user info for 3 students
 
@@ -65,6 +93,8 @@ public Student(){
         System.out.println("\nName: " + getFirstName() + " "+getLastName()+  "\nStudent Email: " + getEmail() + "\nCourse Name: " + getCourseName());
     }
     public void displayInfoStudent2() {
-        System.out.println("\nName: " + firstName + lastName + "\nStudent Email: " + getEmail() + "\nCourse Name: " + getCourseName());
+        System.out.println("\nName: " + first2 +" "+ last2 + "\nStudent Email: " + getEmail_2() + "\nCourse Name: " + getCourseName_2());
     }
+
+
 }
