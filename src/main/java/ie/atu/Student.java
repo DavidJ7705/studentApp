@@ -23,24 +23,6 @@ public Student(){
     this.courseName=courseName;
     }
 
-//method to receive user inputs
-    public void userInput(){
-    Scanner scanner = new Scanner(System.in);
-
-    System.out.print("Enter first name: ");
-    this.firstName = scanner.nextLine();
-
-    System.out.print("Enter Last name: ");
-    this.lastName = scanner.nextLine();
-
-    System.out.print("Enter email: ");
-    this.email = scanner.nextLine();
-
-    System.out.print("Enter course name: ");
-    this.courseName = scanner.nextLine();
-    System.out.println("\n");
-    }
-
     /* Getters */
 
     public String getFirstName(){
@@ -81,5 +63,8 @@ public Student(){
 
     public void displayInfoStudent1(){
         System.out.println("\nName: " + getFirstName() + " "+getLastName()+  "\nStudent Email: " + getEmail() + "\nCourse Name: " + getCourseName());
+    }
+    public void displayInfoStudent2() {
+        System.out.println("\nName: " + firstName + lastName + "\nStudent Email: " + getEmail() + "\nCourse Name: " + getCourseName());
     }
 }
